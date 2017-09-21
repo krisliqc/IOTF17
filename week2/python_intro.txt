@@ -1,0 +1,135 @@
+type python to go in
+
+Ctrl + D to go out
+
+Kriss-MBP:IOTF17 krisli$ python
+Python 2.7.10 (default, Feb  7 2017, 00:08:15) 
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.34)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2+2
+4
+>>> 5-20*2
+-35
+>>> 4 + (2-8*3)
+-18
+>>> 7**2
+49
+>>> width = 20
+>>> height = 5*9
+>>> width * height
+900
+>>> s = "hot"
+>>> p = "dog"
+>>> s+p
+'hotdog'
+>>> print s+p
+hotdog
+>>> j = "hotdog wa totemo oishii desu"
+>>> print j[17:24]
+oishii 
+>>> len(j)
+28
+>>> s=[1,4,5,6]
+>>> s[1]=20
+>>> print s
+[1, 20, 5, 6]
+
+>>> a,b = 0,5
+>>> while b<1000:
+...     print b
+...     a,b = b, a+b    //must be 4 space indentation
+... 
+5
+5
+10
+15
+25
+40
+65
+105
+170
+275
+445
+720
+>>>
+
+>>> import time
+>>> while True:    //default? while the condition is true   //or x = True, while x:
+...     time.sleep(2)
+...     print "sleeping"
+... 
+sleeping
+sleeping 
+
+//command + K clears
+>>> x=int(raw_input("#?"))  // in quotes-> #? can be anything
+#?3
+>>> x=int(raw_input("enter a number"))
+enter a number8
+>>> if x < 0:
+...     print "Neg Number"
+... elif x==0:
+...     print "number is 0"
+... elif x==1:
+...     print "number is 1"
+... else:
+...     print "other"
+... 
+other
+>>> 
+>>> words = ['neko','inu','ratto','sakana']
+>>> for w in words:
+...  print w, len(w)  //w is a variable, anything
+... 
+neko 4
+inu 3
+ratto 5
+sakana 6
+>>> 
+
+>>> for t in range (5,100,2):
+...  print t
+... 
+5
+7
+9  //and so on
+
+>>> def fib(n):   //defining a function
+...     a, b = 0,1
+...     while a<n:
+...         print a
+...         a,b = b, a+b
+... 
+>>> fib(100)
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+>>> 
+
+>>> def greeting(n):
+...     name = raw_input("input name")
+...     print "hello " + name +" you are " + n
+... 
+>>> greeting(25)
+input nameayo
+hello ayo you are 25
+>>> 
+
+
+//after exit out python
+Kriss-MBP:IOTF17 krisli$ touch pytest.py
+Kriss-MBP:IOTF17 krisli$ python pytest.py
+hello
+Kriss-MBP:IOTF17 krisli$ 
+
+
+

@@ -1,0 +1,44 @@
+//link up to wifi
+//in raspi terminal:
+
+sudo nano /etc/hostname
+//it will show sth like “raspberry”, change it to hosts
+//change host name
+<ctrl + O> <enter> <ctrl + X>
+
+sudonano /etc/hosts
+change last line to iotclass_name
+
+sudo reboot
+
+ifconfig
+//Type “ifconfig" and note down wlan0 inet addr
+
+
+//now go to desktop terminal
+//type in ssh pi@iotclass.local
+
+Kriss-MBP:week3 krisli$ ssh pi@krisli.local
+Kriss-MBP:week3 krisli$ ssh pi@192.168.1.34
+
+pi@krisli:~ $ cd Desktop
+pi@krisli:~/Desktop $ ls
+pi@krisli:~/Desktop $ touch kris.js
+pi@krisli:~/Desktop $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+//copy and change the ssid&password
+
+pi@krisli:~/Desktop $ ifconfig //to check wlan ip address
+
+go into cyberduck, select SFTP, port: 22, username: pi, password: raspberry
+
+pi@krisli:~/Desktop $ ls
+ip-email.py  kris.js  raspinotes.txt
+pi@krisli:~/Desktop $ pwd
+/home/pi/Desktop
+
+pi@krisli:~/Desktop $ sudo nano /etc/rc.local
+pi@krisli:~/Desktop $ sudo reboot
+pi@krisli:~/Desktop $ pwd
+
+
+
