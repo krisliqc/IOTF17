@@ -1,0 +1,6 @@
+This project focuses on raspberrypi GPIO using node.js.
+
+When running the script, the users will be prompted to enter their names as two players.
+To play the game, they should try to hit their own button as fast as possible, the first one who reaches 10 hits will be the winner of the game, as console prints.
+
+View the images in this folders for the physical setup and the console dialog.
